@@ -1,0 +1,232 @@
+.create-page {
+    width: 100%;
+    position: relative;
+}
+ .create-page .container {
+    width: 100%;
+ }
+.create-page .container .create-header {
+    border-bottom: 1px solid rgb(239, 237, 237);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.create-page .container .create-header .head{
+    color: gray;
+    font-weight: 500;
+}
+
+.create-page .container .create-body .right-bar {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    position: absolute;
+    border-left: 1px solid rgb(239, 237, 237);
+}
+
+.boardFormContainer button ,
+.createBoardButton,
+.create-page .container .create-header button.btn{
+    cursor: pointer;
+    background-image: linear-gradient(to left, #37a1f7,#3062e1, #251dfd);
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.boardFormContainer button:hover ,
+.createBoardButton:hover,
+.create-page .container .create-header button.btn:hover{
+    background-image: linear-gradient(to left, #251dfd,#3062e1, #37a1f7);
+    transition: all .5s ease-in-out;
+
+}
+
+.create-page .container .create-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    flex: 1;
+    /* border-right: 1px solid rgb(239, 237, 237); */
+
+}
+
+.create-page .container .create-body .upload {
+    width: 375px;
+    height: 430px;
+    background-color: rgb(245, 242, 242);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding:20px;
+    max-width: 350px;
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+    border: 1px dashed rgb(233, 231, 231);
+    position: relative;
+}
+
+.create-page .container .create-body .upload .upload-info {
+    position: absolute;
+    bottom: 30px;
+}
+
+.create-page .container .create-body .preview {
+    position: relative;
+    width: 375px;
+    height: 430px;
+}
+.create-page .container .create-body .preview img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.create-page .container .create-body .preview .edite-icon {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.create-page .container .create-body .preview .edite-icon:hover {
+    padding: 11px;
+    transition: all .5s ease-in-out;
+}
+
+.create-page .container .create-body .form {
+    width: 500px;
+}
+.create-page .container .create-body .form > div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.create-page .container .create-body .form label {
+    color: gray;
+}
+.create-page .container .create-body .form input,textarea{
+    padding: 12px;
+    background-color: rgb(245, 242, 242);
+    border-radius: 15px;
+    font-size: 14px;
+    resize: none;
+}
+.create-page .container .create-body .form select {
+    padding: 10px !important;
+    font-size: 14px;  
+
+    outline: none;   
+}
+
+.create-page .container .create-body .form .add-product{
+    margin-top: 20px;
+}
+
+
+.newBoard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.newBoardContainer {
+  flex: 1;
+  display: flex;
+}
+
+.newBoardItem {
+  padding: 8px;
+  border-radius: 12px;
+  background-color: #e9e9e9;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.createBoardButton {
+  padding: 8px 12px;
+  font-size: 13px;
+  width: max-content;
+  align-self: flex-end;
+}
+
+.boardForm {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.boardFormContainer {
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.boardFormClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.boardFormContainer form {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.boardFormContainer h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #a6a6a6;
+}
+
+.boardFormContainer input {
+  border: 2px solid #e9e9e9;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 15px;
+}
+
+@media (max-width: 997px) {
+    .create-page .container .create-body {
+        flex-direction: column;
+    }
+    .create-page .container .create-body .form {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 475px) {
+    .create-page .container .create-body {
+        flex-direction: column;
+    }
+}

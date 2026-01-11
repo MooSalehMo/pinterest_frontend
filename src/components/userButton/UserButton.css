@@ -1,0 +1,49 @@
+.user-button{
+    cursor: pointer;
+}
+
+.user-button .user-img {
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.user-button .user-options{
+    position: relative;   
+
+}
+.user-button .user-options ul{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.177);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color:aliceblue;
+    border-radius: 20px;
+    z-index: 9999;
+    width: 120px;
+}
+
+.user-button .user-options ul li:hover{
+    color: gray;
+    transition: .3s all ease-in-out;
+}
+
+
+.login-logout-links {
+    font-size: 14px;
+    display: flex;
+    padding: 10px 14px;
+    border-radius: 32px;
+}
+
+
+@media (max-width: 475px) {
+      .user-button , .login-link {
+        display: none;
+    }
+}

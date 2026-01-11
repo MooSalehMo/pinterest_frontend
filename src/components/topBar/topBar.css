@@ -1,0 +1,35 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.top-bar .search {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    background-color: aliceblue !important;
+    border-radius: 25px;
+    gap: 3px;
+    padding-left: 8px;
+    width: 100%;
+}
+.top-bar .search > .bi-search {
+    color: gray !important;
+}
+
+.top-bar .search > input {
+    display: flex;
+    font-size: 14px;
+    flex: 1;
+    background-color: transparent !important;
+    padding: 15px 1px !important
+}
+
+.top-bar .btn-user {
+    align-items: center;
+    padding-top: 8px;
+}

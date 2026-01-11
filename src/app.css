@@ -1,0 +1,24 @@
+.app {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    padding-right: 16px;
+}
+
+.logo{
+  border-radius: 50%;
+}
+
+.btn {
+    cursor: pointer;
+    background-image: linear-gradient(to left, #37a1f7,#3062e1, #251dfd);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to left, #251dfd,#3062e1, #37a1f7); 
+    transition: all .9s ease-in-out 
+}

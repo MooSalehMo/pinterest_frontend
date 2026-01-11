@@ -1,0 +1,20 @@
+.comment {
+    margin-top: 20px;
+    padding: 5px 15px 15px 20px;
+    border-radius: 30px;
+    background-color: #f5f3f3;
+}
+
+.comment .user-date {
+    display: flex; 
+    flex-direction: row ;
+}
+.comment .user-date .created {
+    font-size: 10px;
+    color: #919090;
+    margin-top: 0px;
+}
+
+.comment .desc {
+    font-size: 14px;
+}

@@ -1,0 +1,55 @@
+.gallery-item {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-item img{
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.gallery-item .overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background-color:rgba(12, 12, 17, 0.6);
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 16px;
+
+}
+
+.gallery-item:hover .overlay {
+    display: flex;    
+    transition: all .6s ease-in-out;
+
+}
+
+.gallery-item .overlay button {
+    background-color: rgba(12, 12, 17, 0.6);
+    color: white;
+    padding: 9px 10px;
+    border-radius: 16px;
+
+}
+
+.gallery-item .overlay button:hover {
+    opacity: .7;
+}
+
+.gallery-item .overlay .shareicone-moreicone {
+    display: flex;
+    gap: 10px;
+
+}

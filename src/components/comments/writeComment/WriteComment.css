@@ -1,0 +1,51 @@
+.write-comment {
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -5px 10px -5px #e9e9e9;
+    overflow: hidden;
+}
+
+.write-comment .pragraph {
+    padding: 10px;
+    padding-bottom: 0;
+    color: gray;
+    font-weight: 400;
+}
+.write-comment .input-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #f3f0f0;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    padding-right: 10px;
+}
+
+.write-comment .input-icons .input{
+    width: 90%;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.write-comment .input-icons .icons{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.write-comment .input-icons .icons .emoji-picker {
+    position: absolute;
+    left: -300px;
+    bottom: 39px
+}
+
+/* @media (max-width: 992px) {
+    .write-comment {
+        max-width: 80vw;
+        overflow: hidden;
+    }
+} */

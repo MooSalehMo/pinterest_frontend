@@ -1,0 +1,7 @@
+.home-page {
+
+}
+.home-page .content {
+  flex: 1;
+  margin-right: 16px;
+}

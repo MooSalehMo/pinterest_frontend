@@ -1,0 +1,19 @@
+.comments-container .heading{
+    color: gray;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: medium;
+}
+.comments-container .comments {
+    max-height: 400px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 15px; 
+}
+
+/* @media (max-width: 992px) {
+    .comments-container {
+        max-width: 80vw;
+        overflow: hidden;
+    }
+} */

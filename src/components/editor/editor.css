@@ -1,0 +1,204 @@
+.create-editor {
+    display: flex;
+    gap: 16px;
+}
+
+.create-editor .editor-layers{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px;
+}
+
+.create-editor .editor-layers .header{
+    font-weight: 400;
+}
+
+.create-editor .editor-layers p.slect-layer {
+    color: gray;
+}
+
+.create-editor .editor-layers .layer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* padding: 8px; */
+    cursor: pointer;
+}
+
+.create-editor .editor-layers .layer:hover, .layer.selected {
+    background-color: rgb(245, 243, 243);
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+.create-editor .editor-layers .layer .layer-img {
+    overflow: hidden;
+    width: 80px;
+    height: 60px;
+    border-radius: 20px;
+}
+.create-editor .editor-layers .layer img{
+    border-radius: 15px;
+}
+
+.create-editor .editor-layers .layer span {
+    font-size: 13px;
+}
+
+.create-editor .editor-workspace{
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9e9e9;
+  padding: 64px 0px;
+}
+.create-editor .editor-workspace .canvas{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+}
+.create-editor .editor-workspace .canvas img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+} 
+
+.create-editor .editor-workspace .canvas .input-and-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* overflow: hidden; */
+    position: absolute;
+    z-index: 999;
+    border-radius: 10px; 
+    top: 50px !important;
+    left: 30px !important;
+}
+
+.create-editor .editor-workspace .canvas .input-and-delete input{
+    padding: 8px;
+    cursor: grab;
+    background-color: inherit;
+    border: 1px dashed gray;
+    max-width: 230px;
+}
+
+.create-editor .editor-workspace .canvas .input-and-delete .delete-text {
+    background-color: black;
+    padding: 8px;
+    border-radius: 20px; 
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-editor .editor-options{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.create-editor .editor-options .editing-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+} 
+
+
+.create-editor .editor-options .editing-option.editing-option-orientations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.create-editor .editor-options .editing-option-orientations .orientations{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: #e9e9e9;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.create-editor .editor-options  .editing-option.sizes .size .size-name,
+.create-editor .editor-options .editing-option-orientations .orientation{ 
+    cursor: pointer;
+}
+
+
+
+.create-editor .editor-options  .editing-option.sizes ,
+.create-editor .editor-options .editing-option.font-size {
+    flex-direction: column;
+    align-items: start; 
+}
+
+.create-editor .editor-options  .editing-option.sizes .size{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9e9e9;
+    padding: 5px;
+    gap: 8px;
+    border-radius: 10px;
+
+}
+.create-editor .editor-options  .editing-option.sizes .size .size-name{
+    font-size: 13px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.create-editor .editor-options  .editing-option.sizes .size .size-name.selected,
+.create-editor .editor-options .editing-option-orientations .orientation.selected{ 
+    background-color: white;
+    font-size: 13px;
+    cursor: not-allowed;
+    border-radius: 3px;
+}
+
+.create-editor .editor-options .editing-option span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.create-editor .editor-options .editing-option .number{
+    padding: 10px;
+    border: 1px solid rgb(239, 237, 237);
+    border-radius: 20px;
+}
+
+.create-editor .editor-options .editing-option .text-color، .background-color{
+ position: relative;   
+}
+
+.create-editor .editor-options .editing-option .background-color  .color-preview,
+.create-editor .editor-options .editing-option .text-color  .color-preview{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: linear-gradient(to left, blue, green, red);
+}
+
+.create-editor .editor-options .editing-option .background-color  .color-piker,
+.create-editor .editor-options .editing-option .text-color .color-piker {
+    position: absolute;
+    right: 5px;
+}

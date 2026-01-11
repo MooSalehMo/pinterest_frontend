@@ -1,0 +1,23 @@
+.interaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 470px;
+}
+.interaction div div, .save-icon{
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .interaction {
+        border: 1px solid #f1f1f1;
+        padding: 20px;
+        border-radius: 30px;
+    }
+}
+
+.interaction .details-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

@@ -6,7 +6,7 @@ import './Gallery.css' ;
 
 const fetchPins = async ({pageParam, search, userId, boardId}) => {
   const res = await axios.get(
-    `${import.meta.env.VITE_API_ENDPOINT}/pins?cursor=${
+    `${import.meta.env.VITE_API_ENDPOINT}pins?cursor=${
             pageParam
         }&search=${
             search || ""

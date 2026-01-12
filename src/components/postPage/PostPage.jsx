@@ -14,7 +14,7 @@ const PostPage = () => {
 
   const { isPending, error, data } = useQuery({
     queryKey: ['pin', id],
-    queryFn: ()=> apiRequest.get(`/pins/${id}`).then((res) => res.data)
+    queryFn: ()=> apiRequest.get(`pins/${id}`).then((res) => res.data)
   })
 
   if(isPending) return "Loading...";

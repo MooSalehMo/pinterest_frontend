@@ -1,0 +1,1 @@
+import{j as r}from"./index-8YLEdGs1.js";import{T as s,G as o}from"./topBar-zmshjc-P.js";import"./Image-DQcIMa54.js";import"./MoreIcon-DsXyULJE.js";import"./apiRequest-njWK2yRt.js";import"./authStore-BvNQ3nRy.js";const l=()=>r.jsx("div",{className:"home-page",children:r.jsxs("div",{className:"content",children:[r.jsx(s,{}),r.jsx(o,{})]})});export{l as default};

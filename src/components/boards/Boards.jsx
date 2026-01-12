@@ -23,17 +23,15 @@ const Boards = ({userId}) => {
         {data?.map(board => (
           <Link to={`/search?boardId=${board._id}`} key={board._id} className="item">
             <Image
-            path={board.fristPin.media}
-            w={372}
-            alt="logo"
+              path={board.fristPin?.media || "/default-placeholder.png"} 
+              w={372}
+              alt={board.title}
             />
             <h2 className="header">{board.title}</h2>
             <p className="desc">{board.pinCount} Pins . {format(board.craetedAt)}</p>
         </Link>
         ))
         }
-
-        
 
       </div>
     </div>

@@ -37,7 +37,7 @@ const ProfilePage = () => {
 
         <div className="profile-info">
           <div className="img">
-              <Image w={60} h={60} path={data?.media || "/pinterest/user/avatar.png"}/> 
+              <Image w={60} h={60} path={data?.img || "/pinterest/user/avatar.png"}/> 
             </div>
           <h1 className="name">{data.name || data.username}</h1>
           <div className="pinterestIcon"><Link > <PinterestIcon /> pinterestIcon</Link></div>

@@ -1,7 +1,6 @@
-import React from 'react';
 import './app.css'
-const LeftBar = React.lazy(() => import("./components/leftBar/leftBar"));
-const RoutesFile = React.lazy(() => import("./routes/RoutsFile"));
+import LeftBar from "./components/leftBar/LeftBar"
+import RoutesFile from "./routes/RoutsFile"
 
 
 const App = () => {

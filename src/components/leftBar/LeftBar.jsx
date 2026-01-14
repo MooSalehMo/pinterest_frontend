@@ -7,13 +7,15 @@ import LeftBarLinks from './Links';
 function LeftBar() {
     return (
         <div className='leftBar'>
-            <div className='menuIcons'>
-                <LeftBarLinks />
-            </div>
-            <div className='icon-setting'>
-                <Link to='/' className='menuIcon'>
-                <SettingIcon />
-                </Link>
+            <div className="container">
+                <div className='menuIcons'>
+                    <LeftBarLinks />
+                </div>
+                <div className='icon-setting'>
+                    <Link to='/' className='menuIcon'>
+                    <SettingIcon />
+                    </Link>
+                </div>
             </div>
         </div>
 

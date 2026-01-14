@@ -51,3 +51,11 @@
     font-size: 14px;
     min-width: 270px;
 }
+
+@media (max-width: 600px) {
+    .Auth-page .container {
+    width: 350px;
+    height: 400px;
+
+}
+}

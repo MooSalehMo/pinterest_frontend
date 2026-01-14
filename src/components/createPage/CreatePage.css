@@ -225,8 +225,8 @@
     }
 }
 
-@media (max-width: 475px) {
-    .create-page .container .create-body {
-        flex-direction: column;
+@media (max-width: 600px) {
+    .create-page {
+        margin-top: 60px;
     }
 }

@@ -15,7 +15,6 @@
     border-radius: 25px;
     gap: 3px;
     padding-left: 8px;
-    width: 100%;
 }
 .top-bar .search > .bi-search {
     color: gray !important;
@@ -32,4 +31,10 @@
 .top-bar .btn-user {
     align-items: center;
     padding-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .top-bar {
+        margin-top: 60px;
+    }
 }

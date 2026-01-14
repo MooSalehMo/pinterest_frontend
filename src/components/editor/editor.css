@@ -202,3 +202,11 @@
     position: absolute;
     right: 5px;
 }
+
+@media (max-width: 600px) {
+    .create-editor {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

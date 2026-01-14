@@ -1,4 +1,4 @@
-.leftBar {
+.leftBar .container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,6 @@
   top: 0;
   padding: 16px ;
   border-right: 1px solid #e9e9e9;
-  /* position: relative; */
 }
 
 .menuIcons {
@@ -31,5 +30,37 @@
 
 .menuIcon:hover {
   background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+  .leftBar {
+    position: relative;
+  }
+  .leftBar .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width:  100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    padding: 16px ;
+    overflow: hidden;
+    z-index: 999;
+    background-color: rgba(1, 1, 1, 0.8);
+    color: white !important;
+  }
+
+  .menuIcons {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .menuIcon:hover {
+    background-color: rgba(212, 206, 206, 0.337);;
+  }
 }
 

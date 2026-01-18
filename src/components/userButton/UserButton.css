@@ -40,10 +40,3 @@
     padding: 10px 14px;
     border-radius: 32px;
 }
-
-
-@media (max-width: 475px) {
-      .user-button , .login-link {
-        display: none;
-    }
-}

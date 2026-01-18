@@ -23,7 +23,7 @@ const PostPage = () => {
 
   return (
     <div className='post-page'>
-      <div className="post-container">
+      <div className="container">
 
         <div className="post-img">
           <Image path={data.media} w={400} alt='post' />

@@ -30,11 +30,7 @@ const ProfilePage = () => {
   return (
     <div className='profile-page'>
       <div className="container">
-
-        <div className="top-bar">
-          <TopBar />
-        </div>
-
+        
         <div className="profile-info">
           <div className="img">
               <Image w={60} h={60} path={data?.img || "/pinterest/user/avatar.png"}/> 

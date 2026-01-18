@@ -62,5 +62,9 @@
   .menuIcon:hover {
     background-color: rgba(212, 206, 206, 0.337);;
   }
+  .logo {
+    width: 35px !important;
+    height: 35px !important;
+  }
 }
 

@@ -41,10 +41,10 @@ function Gallery({search, userId, boardId}){
             endMessage={<h4>All posts loaded!</h4>}
         >
             <div className='gallery'>
-                {allPins?.map( (item) => (
-                    <GalleryItem key={item._id} item={item}/>
-                ))
-                }
+                    {allPins?.map( (item) => (
+                        <GalleryItem key={item._id} item={item}/>
+                        ))
+                    }
             </div>
         </InfiniteScroll>
         

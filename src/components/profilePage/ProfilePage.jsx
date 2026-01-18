@@ -1,6 +1,8 @@
 import { Link, useParams } from "react-router"
-import TopBar from "../topBar/topBar"
-import ShareIcon from "../icons/ShareIcon"
+// import TopBar from "../topBar/topBar"
+import ChatIcon from "../icons/ChatIcon"
+
+import ShareIcon from "../icons/ShareIcon" 
 import MoreIcon from "../icons/MoreIcon"
 import PinterestIcon from "../icons/PinterestIcon"
 import Gallery from "../gallery/Gallery"
@@ -36,13 +38,13 @@ const ProfilePage = () => {
               <Image w={60} h={60} path={data?.img || "/pinterest/user/avatar.png"}/> 
             </div>
           <h1 className="name">{data.name || data.username}</h1>
-          <div className="pinterestIcon"><Link > <PinterestIcon /> pinterestIcon</Link></div>
+          <div className="pinterestIcon"><Link > <PinterestIcon /> pinterest</Link></div>
           <p className="followers-count">{data.followerCount} Followers . {data.followingCount} Following</p>
         </div>
 
         <div className="details">
           <Link className="share-icon"><ShareIcon /></Link>
-          <Link className="message">Message</Link>
+          <Link className="message"> <ChatIcon /> </Link>
           <FollowButton isFollowing={data.isFollowing} username={data.username}/>
           <Link className="more"><MoreIcon /></Link>
         </div>

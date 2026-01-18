@@ -1,5 +1,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query"
 import apiRequest from "../../utils/apiRequest"
+import AddFriendIcon from "../icons/AddFriendIcon"
+import FriendsIcon from "../icons/FriendsIcon"
 
 const followUSer = async(username) => {
     const res = await apiRequest.post(`/users/follow/${username}`)
@@ -22,7 +24,7 @@ function FollowButton({isFollowing, username}) {
             disabled={mutation.isPending}
             className="follow-button"
         >
-            {isFollowing ? "Unfollow" : "Follow"}
+            {isFollowing ? <FriendsIcon /> : <AddFriendIcon />}
         </button>
     )
 }

@@ -2,9 +2,11 @@ import HeartIcon from "../../icons/HeartIcon"
 import ShareIcon from "../../icons/ShareIcon"
 import SaveIcon from "../../icons/SaveIcon"
 import MoreIcon from "../../icons/MoreIcon"
+import HeartFillIcon from "../../icons/HeartFillIcon"
 import {useMutation, useQuery, useQueryClient} from "@tanstack/react-query"
 import apiRequest from "../../../utils/apiRequest"
 import './interactionPostPage.css'
+import SaveFillIcon from "../../icons/SaveFillIcon"
 
 const interact = async (id, type) => {
   const res = await apiRequest.post(`/pins/interact/${id}`, { type });
@@ -33,14 +35,14 @@ function interactionPostPage ({postId}) {
     <div className="interaction">
         <div className="details-icons">
             <div className="heart-icon" onClick={() => mutation.mutate({ id: postId, type: "like" })}> 
-              <HeartIcon stroke={data.isLiked ? "#d80b0bff" : "#000000"} fill={data.isLiked ? "#d80b0bff" : "none"}/>
+              {data.isLiked ? <HeartFillIcon /> :  <HeartIcon /> }
             </div>
             <p className="numbers">{data.likeCount}</p>
             <div className="share-icon"> <ShareIcon /> </div>
             <div className="three-dots-icon"> <MoreIcon /> </div>
         </div>
         <div className="save-icon" disabled={mutation.isPending} onClick={() => mutation.mutate({ id: postId, type: "save" })}> 
-          {data.isSaved ? "saved" : <SaveIcon />} 
+          {data.isSaved ? <SaveFillIcon /> : <SaveIcon />} 
         </div>
     </div>
   )

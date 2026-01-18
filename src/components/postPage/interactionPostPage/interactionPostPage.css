@@ -1,11 +1,9 @@
 .interaction {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: 350px;
-    overflow: hidden;
 }
+
 .interaction div div, .save-icon{
     cursor: pointer;
 }

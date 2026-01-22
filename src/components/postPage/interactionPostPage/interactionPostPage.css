@@ -1,7 +1,8 @@
 .interaction {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    max-width: 350px;
+    overflow: hidden;
 }
 
 .interaction div div, .save-icon{
@@ -22,6 +23,10 @@
         border: 1px solid #f1f1f1;
         padding: 10px 20px;
         border-radius: 30px;
+        max-width: 350px;
+    } 
+    .interaction div div {
+        width: 100%;
     }
 }
 

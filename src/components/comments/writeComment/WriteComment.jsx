@@ -1,5 +1,4 @@
 import EmojiIcon from "../../icons/EmojIcon"
-import ImageIcon from "../../icons/ImageIcon"
 import StartSquerIcon from "../../icons/StarSquerIcon"
 import EmojiPicker from 'emoji-picker-react'
 import './WriteComment.css'
@@ -51,8 +50,6 @@ function WriteComment ({id}){
                   <EmojiIcon />
                   {open && <EmojiPicker onEmojiClick={handleOnEmojiClick} className="emoji-picker"/>}
                 </div>
-                <StartSquerIcon />
-                <ImageIcon />
 
             </div>
         </form>

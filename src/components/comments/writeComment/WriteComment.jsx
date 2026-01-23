@@ -5,6 +5,7 @@ import './WriteComment.css'
 import { useState } from "react"
 import apiRequest from "../../../utils/apiRequest";
 import {useMutation, useQueryClient} from "@tanstack/react-query";
+import SendIcon from "../../icons/SendIcon"
 
 const addComment = async (comment) => {
   const res = await apiRequest.post('/comments', comment)
@@ -31,6 +32,8 @@ function WriteComment ({id}){
     }
   })
 
+
+
   const handleSubmit = async(e) => {
     e.preventDefault()
 
@@ -45,12 +48,13 @@ function WriteComment ({id}){
         <h4 className="pragraph">What do you think ?</h4>
         <form onSubmit={handleSubmit} className="input-icons">
             <input onChange={ e => setDesc(e.target.value)} value={desc} name="description" className='input' type='text' placeholder='Do you want write any comment !' />
-              <div className="icons">
-                <div onClick={()=>setOpen(prev =>!prev)}>
-                  <EmojiIcon />
-                  {open && <EmojiPicker onEmojiClick={handleOnEmojiClick} className="emoji-picker"/>}
-                </div>
-
+            <div className="icons">
+              <div onClick={()=>setOpen(prev =>!prev)}>
+                <EmojiIcon />
+                {open && <EmojiPicker onEmojiClick={handleOnEmojiClick} className="emoji-picker"/>}
+              </div>
+              
+              <button className="handle-submit" onClick={handleSubmit}> <SendIcon  /> </button> 
             </div>
         </form>
     </div>

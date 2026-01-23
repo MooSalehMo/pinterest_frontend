@@ -2,7 +2,6 @@
     width: 100%;
     bottom: 0;
     box-shadow: 0 -5px 10px -5px #e9e9e9;
-    overflow: hidden;
     padding: 10px;
 }
 
@@ -40,12 +39,14 @@
 .write-comment .input-icons .icons .emoji-picker {
     position: absolute;
     left: -300px;
-    bottom: 39px
+    bottom: 39px;
+    z-index: 999;
 }
 
-/* @media (max-width: 992px) {
-    .write-comment {
-        max-width: 80vw;
-        overflow: hidden;
-    }
-} */
+.write-comment .input-icons .handle-submit {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-right: 4px;
+    padding-top: 2px;
+}

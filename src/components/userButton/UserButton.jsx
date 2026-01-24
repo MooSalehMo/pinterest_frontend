@@ -4,6 +4,8 @@ import { useNavigate, Link } from 'react-router'
 import '../userButton/UserButton.css'
 import useAuthStore from '../../utils/authStore'
 import Image from '../Image/Image'
+import LoginIcon from '../icons/LoginIcon'
+import RegisterIcon from '../icons/RegisterIcon'
 
 
 
@@ -38,8 +40,8 @@ const UserButton = () => {
             }
         </div>
     ) : (
-        <div className='login-logout-links'> 
-            <Link to="/auth" className="login-link" >Login / Register</Link>
+        <div className='login btn'> 
+            <Link to="/auth" className="login-link" >Login  </Link>
          </div>
     ) 
     }

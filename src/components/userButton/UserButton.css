@@ -1,5 +1,8 @@
 .user-button{
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .user-button .user-img {
@@ -34,9 +37,15 @@
 }
 
 
-.login-logout-links {
-    font-size: 14px;
+.login {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     padding: 10px 14px;
     border-radius: 32px;
+}
+
+.login .login-link {
+    /* margin-top: 10px !important; */
 }

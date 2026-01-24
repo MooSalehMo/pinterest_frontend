@@ -10,7 +10,7 @@
 
 .Auth-page .container {
     width: 400px;
-    height: 500px;
+    height: max-content;
     background-color: #f8f7f7;
     border-radius: 50px;
     padding: 10px;
@@ -56,8 +56,12 @@
 }
 
 @media (max-width: 600px) {
+    .Auth-page {
+        padding-top: 40px;
+    }
+
     .Auth-page .container {
-        width: 380px;
-        height: 400px;
+        width: max-content;
+        height: max-content;
 }
 }
